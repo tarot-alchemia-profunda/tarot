@@ -1,0 +1,927 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Что цепляет мужчин в тебе — таро</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAF6F1;
+  --surface: #FFF9F4;
+  --card-bg: #FFFFFF;
+  --border: rgba(180,100,80,0.15);
+  --border-strong: rgba(180,100,80,0.3);
+  --gold: #A8733A;
+  --gold-light: #C9935A;
+  --crimson: #8B1A2A;
+  --rose: #B84058;
+  --rose-light: #E8A0B0;
+  --text: #1E0E14;
+  --text-muted: #5A3A42;
+  --text-dim: #8A6A72;
+  --accent-bg: #FDF0F0;
+}
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  min-height: 100vh;
+}
+
+
+.container {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+}
+
+
+/* ===== INTRO PAGE ===== */
+.intro-page {
+  background: var(--card-bg);
+  border: 1px solid var(--border-strong);
+  border-radius: 28px;
+  padding: 44px 36px;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 32px rgba(139,26,42,0.06);
+}
+
+
+.intro-page::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--crimson), var(--gold-light), var(--crimson), transparent);
+}
+
+
+.intro-page::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold-light), var(--crimson), var(--gold-light), transparent);
+}
+
+
+.intro-icon {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+
+.intro-page h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 400;
+  color: var(--crimson);
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+
+
+.intro-page h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+
+.deco-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+
+.deco-line {
+  flex: 1;
+  max-width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-light));
+}
+
+
+.deco-line.r { background: linear-gradient(90deg, var(--gold-light), transparent); }
+.deco-sym { font-size: 0.75rem; color: var(--gold); opacity: 0.7; }
+
+
+.intro-text {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.85;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+
+.intro-text p { margin-bottom: 12px; }
+
+
+.services-list {
+  background: var(--accent-bg);
+  border: 1px solid rgba(184,64,88,0.15);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin: 20px 0 28px;
+  text-align: left;
+}
+
+
+.services-list p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+}
+
+
+.services-list ul {
+  list-style: none;
+}
+
+
+.services-list li {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  padding: 5px 0;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
+
+
+.services-list li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  color: var(--rose);
+  font-size: 0.6rem;
+  top: 8px;
+}
+
+
+.intro-cta-wrap {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: 50px;
+  background: var(--crimson);
+  color: #FFF5F0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(139,26,42,0.25);
+}
+
+
+.btn-primary:hover {
+  background: #6B1520;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(139,26,42,0.35);
+}
+
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: 50px;
+  background: transparent;
+  border: 1.5px solid var(--border-strong);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+
+.btn-secondary:hover {
+  border-color: var(--gold-light);
+  color: var(--gold);
+  transform: translateY(-2px);
+}
+
+
+/* ===== SECTION LABEL ===== */
+.section-label {
+  text-align: center;
+  margin: 40px 0 24px;
+}
+
+
+.section-label span {
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: var(--bg);
+  padding: 0 16px;
+  position: relative;
+}
+
+
+.section-label::before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-strong), transparent);
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+
+/* ===== CARD ===== */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(139,26,42,0.04);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+
+.card:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 4px 24px rgba(139,26,42,0.08);
+}
+
+
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 24px 0;
+}
+
+
+.card-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(168,115,58,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.85rem;
+  color: var(--gold);
+  flex-shrink: 0;
+  background: rgba(168,115,58,0.05);
+}
+
+
+.card-title-wrap { flex: 1; }
+
+
+.card-emoji { font-size: 1rem; margin-bottom: 1px; }
+
+
+.card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--crimson);
+  line-height: 1.2;
+}
+
+
+.card-body {
+  padding: 14px 24px 22px;
+}
+
+
+.card-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--gold);
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(168,115,58,0.15);
+}
+
+
+.card-text {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+
+.card-text p { margin-bottom: 9px; }
+.card-text p:last-child { margin-bottom: 0; }
+
+
+.card-cta-wrap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 4px;
+}
+
+
+.cta-small {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+
+.cta-main {
+  background: var(--crimson);
+  color: #FFF5F0;
+  box-shadow: 0 3px 12px rgba(139,26,42,0.2);
+}
+
+
+.cta-main:hover {
+  background: #6B1520;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 18px rgba(139,26,42,0.3);
+}
+
+
+.cta-channel {
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  color: var(--text-dim);
+}
+
+
+.cta-channel:hover {
+  border-color: var(--gold-light);
+  color: var(--gold);
+}
+
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--crimson);
+  border-radius: 24px;
+  padding: 40px 32px;
+  text-align: center;
+  margin-top: 44px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.footer::before {
+  content: '✦ ✦ ✦';
+  position: absolute;
+  top: 16px; left: 0; right: 0;
+  text-align: center;
+  font-size: 0.5rem;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 0.5em;
+}
+
+
+.footer-icon { font-size: 2.2rem; display: block; margin-bottom: 14px; }
+
+
+.footer h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: #FFF5F0;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+
+.footer p {
+  font-size: 0.82rem;
+  color: rgba(255,245,240,0.7);
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+
+.footer-btns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.footer-btn-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  border-radius: 50px;
+  background: #FFF5F0;
+  color: var(--crimson);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+
+.footer-btn-main:hover { transform: translateY(-2px); opacity: 0.9; }
+
+
+.footer-btn-sec {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  border-radius: 50px;
+  background: transparent;
+  border: 1.5px solid rgba(255,245,240,0.4);
+  color: rgba(255,245,240,0.8);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+
+.footer-btn-sec:hover { border-color: rgba(255,245,240,0.8); transform: translateY(-2px); }
+
+
+@media (max-width: 480px) {
+  .container { padding: 32px 14px 60px; }
+  .intro-page { padding: 32px 20px; }
+  .card-top { padding: 18px 18px 0; }
+  .card-body { padding: 12px 18px 18px; }
+  .footer { padding: 32px 20px; }
+  .intro-cta-wrap { flex-direction: column; align-items: center; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+
+  <!-- INTRO PAGE -->
+  <div class="intro-page">
+    <span class="intro-icon">✨</span>
+    <h1>Что мужчин цепляет в тебе —<br><em>а ты даже не догадываешься</em></h1>
+
+
+    <div class="deco-row">
+      <div class="deco-line"></div>
+      <div class="deco-sym">🌙</div>
+      <div class="deco-sym">✦</div>
+      <div class="deco-sym">🌙</div>
+      <div class="deco-line r"></div>
+    </div>
+
+
+    <div class="intro-text">
+      <p>Перед тобой небольшой интуитивный тест.</p>
+      <p>Ты выбрала карту — и каждая из них показывает одну из сторон твоей энергии, которую мужчины могут чувствовать особенно ярко.</p>
+      <p>Иногда мы сами не замечаем свои сильные стороны. Но со стороны они могут быть тем самым качеством, которое притягивает людей.</p>
+      <p>В этом файле ты найдёшь расшифровку своей карты и узнаешь, какую именно энергию люди чувствуют рядом с тобой.</p>
+      <p>Если после этого у тебя появится желание глубже разобраться в своей ситуации — я работаю как таролог и специализируюсь на теме отношений и аналитике поведения партнёров.</p>
+    </div>
+
+
+    <div class="services-list">
+      <p>Я помогаю:</p>
+      <ul>
+        <li>понять реальные намерения мужчины</li>
+        <li>посмотреть перспективы нового знакомства</li>
+        <li>разобраться в сложной истории с бывшим</li>
+        <li>увидеть скрытую динамику отношений</li>
+      </ul>
+    </div>
+
+
+    <div class="intro-cta-wrap">
+      <a class="btn-primary" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+      <a class="btn-secondary" href="https://t.me/tarot_alchemia">📲 подписаться на канал</a>
+    </div>
+  </div>
+
+
+  <div class="section-label"><span>твоя карта</span></div>
+
+
+  <!-- CARD 1 -->
+  <div class="card">
+    <div class="card-top">
+      <div class="card-num">1</div>
+      <div class="card-title-wrap">
+        <div class="card-emoji">🌙</div>
+        <div class="card-title">Женщина с луной</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-tagline">Магнетичная, интуитивная энергия</div>
+      <div class="card-text">
+        <p>Эта карта говорит о твоей магнетичной, интуитивной энергии. Ты из тех женщин, которых мужчины чувствуют на уровне ощущений, а не логики.</p>
+        <p>Ты умеешь тонко считывать настроение людей, чувствовать атмосферу, понимать эмоции даже тогда, когда человек ничего не говорит вслух. Рядом с тобой сложно притворяться или играть роль.</p>
+        <p>Такая энергия одновременно завораживает и немного пугает. С тобой невозможно строить поверхностные отношения — рядом с тобой люди быстро оказываются в зоне настоящих чувств.</p>
+        <p>Ты притягиваешь мужчин, которым важна глубина, эмоциональная связь и искренность.</p>
+      </div>
+      <div class="card-cta-wrap">
+        <a class="cta-small cta-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+        <a class="cta-small cta-channel" href="https://t.me/tarot_alchemia">📲 канал</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 2 -->
+  <div class="card">
+    <div class="card-top">
+      <div class="card-num">2</div>
+      <div class="card-title-wrap">
+        <div class="card-emoji">⭐</div>
+        <div class="card-title">Женщина на лестнице со звёздами</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-tagline">Вдохновляющая энергия</div>
+      <div class="card-text">
+        <p>Эта карта говорит о твоей вдохновляющей энергии. Ты из тех женщин, рядом с которыми мужчина начинает больше мечтать, ставить цели и верить, что может добиться большего.</p>
+        <p>Рядом с тобой часто появляется ощущение, что можно вырасти, подняться на новый уровень, изменить свою жизнь.</p>
+        <p>Иногда ты даже не осознаёшь, насколько сильно влияешь на людей. Но мужчины это чувствуют очень хорошо.</p>
+        <p>Твоя энергия — это энергия человека, который зажигает чужие звёзды.</p>
+      </div>
+      <div class="card-cta-wrap">
+        <a class="cta-small cta-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+        <a class="cta-small cta-channel" href="https://t.me/tarot_alchemia">📲 канал</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 3 -->
+  <div class="card">
+    <div class="card-top">
+      <div class="card-num">3</div>
+      <div class="card-title-wrap">
+        <div class="card-emoji">🐱</div>
+        <div class="card-title">Девушка с котиком</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-tagline">Мягкая и тёплая энергетика</div>
+      <div class="card-text">
+        <p>Эта карта говорит о твоей мягкой и тёплой энергетике. В тебе есть редкое сочетание — нежность, спокойствие и умение создавать атмосферу уюта.</p>
+        <p>Ты умеешь слушать, поддерживать и давать ощущение, что человека принимают таким, какой он есть.</p>
+        <p>Именно поэтому рядом с тобой хочется задержаться. Твоя энергия напоминает дом — место, где можно снять маски.</p>
+        <p>Мужчин это цепляет гораздо сильнее, чем многие думают.</p>
+      </div>
+      <div class="card-cta-wrap">
+        <a class="cta-small cta-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+        <a class="cta-small cta-channel" href="https://t.me/tarot_alchemia">📲 канал</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 4 -->
+  <div class="card">
+    <div class="card-top">
+      <div class="card-num">4</div>
+      <div class="card-title-wrap">
+        <div class="card-emoji">🔥</div>
+        <div class="card-title">Девушка в зелёном платье в огне</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-tagline">Сильная внутренняя энергия</div>
+      <div class="card-text">
+        <p>Эта карта говорит о твоей сильной внутренней энергии. Ты не из тех женщин, которые растворяются в других людях. В тебе есть характер, внутренняя опора и способность стоять за себя.</p>
+        <p>Ты можешь быть мягкой, но внутри есть очень мощный стержень.</p>
+        <p>Именно эта комбинация — женственность и сила — часто притягивает мужчин сильнее всего. С тобой невозможно обращаться неуважительно или играть в манипуляции.</p>
+        <p>Рядом с тобой люди чувствуют яркость, страсть и живую энергию.</p>
+      </div>
+      <div class="card-cta-wrap">
+        <a class="cta-small cta-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+        <a class="cta-small cta-channel" href="https://t.me/tarot_alchemia">📲 канал</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 5 -->
+  <div class="card">
+    <div class="card-top">
+      <div class="card-num">5</div>
+      <div class="card-title-wrap">
+        <div class="card-emoji">❤️</div>
+        <div class="card-title">Девушка в красном платье и мужчина</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-tagline">Чувственность и эмоциональная притягательность</div>
+      <div class="card-text">
+        <p>Эта карта говорит о твоей чувственности и эмоциональной притягательности. В тебе есть энергия женщины, которая умеет создавать романтику, вдохновлять и пробуждать чувства.</p>
+        <p>Ты не холодная и не закрытая — ты умеешь жить эмоциями и делиться ими.</p>
+        <p>Рядом с тобой отношения ощущаются настоящими, живыми, наполненными. Мужчины чувствуют это очень быстро. Именно поэтому рядом с тобой часто возникает сильное притяжение.</p>
+      </div>
+      <div class="card-cta-wrap">
+        <a class="cta-small cta-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+        <a class="cta-small cta-channel" href="https://t.me/tarot_alchemia">📲 канал</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 6 -->
+  <div class="card">
+    <div class="card-top">
+      <div class="card-num">6</div>
+      <div class="card-title-wrap">
+        <div class="card-emoji">👨‍👩‍👧</div>
+        <div class="card-title">Семейная карта</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-tagline">Энергия надёжности и стабильности</div>
+      <div class="card-text">
+        <p>Эта карта говорит о твоей энергии надёжности и стабильности. Рядом с тобой возникает ощущение, что на тебя можно опереться.</p>
+        <p>Ты из тех женщин, с которыми мужчина начинает задумываться не только о чувствах, но и о будущем.</p>
+        <p>В тебе есть энергия партнёра, с которым можно строить жизнь, принимать решения и двигаться вперёд. Такая энергия редко остаётся незамеченной.</p>
+      </div>
+      <div class="card-cta-wrap">
+        <a class="cta-small cta-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+        <a class="cta-small cta-channel" href="https://t.me/tarot_alchemia">📲 канал</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 7 -->
+  <div class="card">
+    <div class="card-top">
+      <div class="card-num">7</div>
+      <div class="card-title-wrap">
+        <div class="card-emoji">☁️</div>
+        <div class="card-title">Девушка на облаках</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-tagline">Лёгкость и внутренняя свобода</div>
+      <div class="card-text">
+        <p>Эта карта говорит о твоей лёгкости и внутренней свободе. В тебе есть способность смотреть на мир чуть шире и мягче, чем большинство людей.</p>
+        <p>Рядом с тобой мужчина может почувствовать, что жизнь — это не только обязанности и планы, но и пространство для эмоций, идей и новых ощущений.</p>
+        <p>Ты привносишь в отношения ощущение красоты, лёгкости и романтики — и это часто делает тебя особенной в глазах других.</p>
+      </div>
+      <div class="card-cta-wrap">
+        <a class="cta-small cta-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+        <a class="cta-small cta-channel" href="https://t.me/tarot_alchemia">📲 канал</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 8 -->
+  <div class="card">
+    <div class="card-top">
+      <div class="card-num">8</div>
+      <div class="card-title-wrap">
+        <div class="card-emoji">⚔️</div>
+        <div class="card-title">Девушка с мечом</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-tagline">Ясность, ум и внутренняя честность</div>
+      <div class="card-text">
+        <p>Эта карта говорит о твоей ясности, уме и внутренней честности. Ты не из тех людей, которые предпочитают играть в намёки или скрытые манипуляции.</p>
+        <p>В отношениях это проявляется как способность видеть суть человека. Ты быстро чувствуешь, где искренность, а где игра.</p>
+        <p>Мужчин часто привлекает именно эта энергия — рядом с тобой невозможно притворяться. С тобой отношения становятся честными и настоящими.</p>
+      </div>
+      <div class="card-cta-wrap">
+        <a class="cta-small cta-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+        <a class="cta-small cta-channel" href="https://t.me/tarot_alchemia">📲 канал</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 9 -->
+  <div class="card">
+    <div class="card-top">
+      <div class="card-num">9</div>
+      <div class="card-title-wrap">
+        <div class="card-emoji">💗</div>
+        <div class="card-title">Рыжая девушка с сердечками</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-tagline">Открытая и тёплая эмоциональность</div>
+      <div class="card-text">
+        <p>Эта карта говорит о твоей открытой и тёплой эмоциональности. Ты умеешь радоваться, проявлять чувства и создавать вокруг себя атмосферу живых эмоций.</p>
+        <p>Рядом с тобой люди начинают чувствовать себя более свободно — они могут проявлять свои чувства, говорить о том, что для них важно.</p>
+        <p>Мужчин часто притягивает именно это ощущение — рядом с тобой они могут снова почувствовать себя живыми.</p>
+      </div>
+      <div class="card-cta-wrap">
+        <a class="cta-small cta-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+        <a class="cta-small cta-channel" href="https://t.me/tarot_alchemia">📲 канал</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 10 -->
+  <div class="card">
+    <div class="card-top">
+      <div class="card-num">10</div>
+      <div class="card-title-wrap">
+        <div class="card-emoji">🐎</div>
+        <div class="card-title">Девушка на чёрном коне</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-tagline">Сила и независимость</div>
+      <div class="card-text">
+        <p>Эта карта говорит о твоей силе и независимости. Ты человек, который умеет идти своим путём. Даже если вокруг есть сомнения или давление, ты всё равно способна принимать собственные решения.</p>
+        <p>Мужчин это притягивает, потому что рядом с тобой чувствуется движение, энергия и уверенность в жизни.</p>
+        <p>Ты не ждёшь, пока обстоятельства сложатся сами — ты умеешь создавать свою реальность.</p>
+      </div>
+      <div class="card-cta-wrap">
+        <a class="cta-small cta-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+        <a class="cta-small cta-channel" href="https://t.me/tarot_alchemia">📲 канал</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 11 -->
+  <div class="card">
+    <div class="card-top">
+      <div class="card-num">11</div>
+      <div class="card-title-wrap">
+        <div class="card-emoji">🌱</div>
+        <div class="card-title">Девушка поливает дерево</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-tagline">Способность раскрывать потенциал людей</div>
+      <div class="card-text">
+        <p>Эта карта говорит о твоей способности раскрывать потенциал людей. Ты умеешь видеть в человеке больше, чем он сам о себе думает.</p>
+        <p>Ты словно создаёшь пространство, где человек может расти и развиваться. Иногда именно благодаря тебе мужчины начинают менять свою жизнь и двигаться вперёд.</p>
+        <p>Это редкая энергия — энергия человека, который помогает другим раскрыться.</p>
+      </div>
+      <div class="card-cta-wrap">
+        <a class="cta-small cta-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+        <a class="cta-small cta-channel" href="https://t.me/tarot_alchemia">📲 канал</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 12 -->
+  <div class="card">
+    <div class="card-top">
+      <div class="card-num">12</div>
+      <div class="card-title-wrap">
+        <div class="card-emoji">☂️</div>
+        <div class="card-title">Девушка с зонтом</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-tagline">Способность создавать чувство безопасности</div>
+      <div class="card-text">
+        <p>Эта карта говорит о твоей способности создавать чувство безопасности. Ты умеешь быть рядом в сложные моменты, поддерживать и помогать пережить непростые периоды.</p>
+        <p>В тебе есть спокойствие и внутренняя устойчивость. Рядом с тобой люди чувствуют, что могут расслабиться и быть собой.</p>
+        <p>Мужчины часто ценят именно такую энергию — рядом с тобой появляется ощущение надёжности и поддержки.</p>
+      </div>
+      <div class="card-cta-wrap">
+        <a class="cta-small cta-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+        <a class="cta-small cta-channel" href="https://t.me/tarot_alchemia">📲 канал</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 13 -->
+  <div class="card">
+    <div class="card-top">
+      <div class="card-num">13</div>
+      <div class="card-title-wrap">
+        <div class="card-emoji">💔</div>
+        <div class="card-title">Девушка с разбитым сердцем</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-tagline">Эмоциональная глубина</div>
+      <div class="card-text">
+        <p>Эта карта говорит о твоей эмоциональной глубине. Ты человек, который умеет чувствовать по-настоящему — ты не живёшь поверхностными эмоциями, ты проживаешь чувства полностью.</p>
+        <p>Иногда это означает, что ты переживаешь боль сильнее других, но вместе с этим в тебе есть способность понимать и принимать чужие эмоции.</p>
+        <p>Такая эмоциональная глубина делает тебя человеком, рядом с которым отношения становятся настоящими и значимыми.</p>
+      </div>
+      <div class="card-cta-wrap">
+        <a class="cta-small cta-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+        <a class="cta-small cta-channel" href="https://t.me/tarot_alchemia">📲 канал</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 14 -->
+  <div class="card">
+    <div class="card-top">
+      <div class="card-num">14</div>
+      <div class="card-title-wrap">
+        <div class="card-emoji">🐕</div>
+        <div class="card-title">Девушка с собакой в путешествии</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-tagline">Любовь к свободе и новому опыту</div>
+      <div class="card-text">
+        <p>Эта карта говорит о твоей любви к свободе и новому опыту. Ты человек, который не боится менять пространство вокруг себя, открывать новые дороги и пробовать то, чего раньше не было.</p>
+        <p>Мужчин часто притягивает именно это — рядом с тобой жизнь ощущается как путешествие, в котором всегда есть место новым впечатлениям.</p>
+        <p>Ты умеешь вдохновлять людей выходить за пределы привычного.</p>
+      </div>
+      <div class="card-cta-wrap">
+        <a class="cta-small cta-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+        <a class="cta-small cta-channel" href="https://t.me/tarot_alchemia">📲 канал</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 15 -->
+  <div class="card">
+    <div class="card-top">
+      <div class="card-num">15</div>
+      <div class="card-title-wrap">
+        <div class="card-emoji">💻</div>
+        <div class="card-title">Девушка на пляже с ноутбуком</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-tagline">Самодостаточность и внутренняя опора</div>
+      <div class="card-text">
+        <p>Эта карта говорит о твоей самодостаточности и внутренней опоре. Ты умеешь строить свою жизнь, принимать решения и реализовывать свои идеи.</p>
+        <p>Такая энергия часто притягивает мужчин, потому что рядом с тобой чувствуется сильная и интересная личность.</p>
+        <p>Ты не ищешь кого-то, кто будет определять твою жизнь — ты уже создаёшь её сама. Именно поэтому отношения рядом с тобой строятся не на зависимости, а на партнёрстве и уважении.</p>
+      </div>
+      <div class="card-cta-wrap">
+        <a class="cta-small cta-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+        <a class="cta-small cta-channel" href="https://t.me/tarot_alchemia">📲 канал</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span class="footer-icon">🔮</span>
+    <h3>Хочешь разобраться в своей ситуации?</h3>
+    <p>Я таролог и специализируюсь на аналитике отношений. Помогаю понять намерения мужчины, увидеть перспективы и разобраться в повторяющихся историях.</p>
+    <div class="footer-btns">
+      <a class="footer-btn-main" href="https://t.me/tarot_alchemia_profunda">✉ написать мне</a>
+      <a class="footer-btn-sec" href="https://t.me/tarot_alchemia">📲 подписаться на канал</a>
+    </div>
+  </div>
+
+
+</div>
+</body>
+</html>
